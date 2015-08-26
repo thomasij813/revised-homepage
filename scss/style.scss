@@ -1,0 +1,313 @@
+$nav-font-color: #20C7FB;
+$nav-bg-color: #232528;
+
+nav{
+  font-size: 1.5em;
+}
+
+.navbar {
+  background-color: $nav-bg-color;
+  border-color: $nav-bg-color;
+}
+
+.navbar-brand {
+  font-family: 'Arvo';
+  color: $nav-font-color !important;
+  font-size: 1em;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: $nav-bg-color;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: $nav-font-color;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $nav-font-color;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: $nav-bg-color;
+}
+
+.margin-10{
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+}
+
+.blue-text a {
+  color: $nav-font-color !important;
+  font-family: 'Arvo';
+}
+
+.hero-image {
+  background: url(https://farm3.staticflickr.com/2938/14753210871_8cb14ae406_o_d.jpg) center center no-repeat;
+  background-size: cover;
+  height: 450px;
+  margin-left: 0;
+  margin-right: 0;
+  .hero-image-wrapper{
+    height: 450px;
+    background-color: rgba(59,51,85,.3);
+  }
+  h1 {
+    color: white;
+    font-family: Arvo;
+    font-weight: 700;
+    font-size: 3em;
+    text-shadow: 1.75px 1.75px #380036;
+  }
+  h2{
+      font-family: Arvo;
+      color: white;
+      font-style: italic;
+      margin-top: -5px;
+      text-shadow: 1.75px 1.75px #380036;
+      font-size: 2em;
+    }
+  img{
+    margin-top: 75px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.hero-icon{
+  color: white;
+  font-size: 2.5em;
+  display: inline-block;
+  float: left;
+  text-shadow: 1px 1px #380036;
+}
+
+.row-1 {
+  padding: 40px 20px;
+  background-color: #28AFB0;
+  color: white;
+  font-family: arvo;
+  margin-left: 0;
+  margin-right: 0;
+  div:first-of-type{
+    margin-bottom: 25px;
+  }
+  h2{
+    font-family: "Montserrat";
+    font-size: 2.1em;
+    line-height: 1.4;
+  }
+}
+
+.row-2{
+  padding: 100px 0;
+  background-color: #3B3355;
+  margin: 0;
+  div:first-of-type{
+    margin-bottom: 0;
+  }
+  p{
+    font-family: "Montserrat";
+    color: white;
+    font-size: 2.5em;
+    line-height: 1.4;
+  }
+  .dev-group{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.icons {
+    color: white;
+    font-size: 4em;
+    line-height: 1.2;
+  }
+
+.row-3 {
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden; // added for pseudo-element
+  position: relative; // added for pseudo-element
+  background-color: rgba(209,109,109,0.35);
+  padding-left: 15px;
+  padding-right: 15px;
+  &::before{
+    content: ' ';
+    position: fixed; // instead of background-attachment
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(https://farm8.staticflickr.com/7287/9467782298_0a6d715a8e_o_d.jpg) center center no-repeat;
+    background-size: cover;
+    will-change: transform; // creates a new paint layer
+    z-index: -2;
+  }
+}
+
+.codepen {
+  margin-top: 30px;
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.row-4{
+  background-color: $nav-bg-color;
+  margin: 0;
+  font-family: "Montserrat";
+  color: white;
+  line-height: 1.4;
+  p{
+    margin: 35px 0;
+    font-size: 3em;
+  }
+  ul{
+    font-size: 2em;
+    margin-bottom: 35px;
+    li{
+      margin: 20px 0;
+      a{
+        color: $nav-font-color;
+      }
+    }
+    .icons{
+      font-size: 1.5em;
+      &:hover {
+        color: $nav-font-color;
+      }
+    }
+  }
+}
+
+.contact-icons{
+  ul{
+    margin-bottom:35px;
+    li{
+      margin: 0;
+    }
+  }
+}
+
+.row-5 {
+  margin: 0;
+  background-color: $nav-bg-color;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  color: white;
+  p{
+    margin-bottom: 0;
+    font-size: 1.1em;
+    font-family: "Arvo";
+    i{
+      color: $nav-font-color; 
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    margin-left: 10px;
+  }
+  
+  .hero-image {
+    height: 600px;
+    .hero-image-wrapper{
+      height: 600px;
+    }
+    img {
+      height: 250px;
+      width: 250px;
+      margin-top: 140px;
+    }
+    h1{
+      font-size: 3.5em;
+    }
+    h2{
+      font-family: Arvo;
+      color: white;
+      font-style: italic;
+      margin-top: -5px;
+      text-shadow: 1.75px 1.75px #380036;
+      font-size: 2.3em;
+    }
+  }
+  
+  .row-1{
+    padding: 100px 20px;
+    h2{
+      font-size: 2.3em;
+      margin-top: 0px;
+    }
+  }
+  
+  .row-3{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .row-4{
+    ul{
+      li{
+        .icons{
+          font-size: 1.8em;
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+  
+  .row-5{
+    p{
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar-brand{
+    font-size: .75em;
+  }
+  
+  .nav{
+    font-size: .75em;
+  }
+  
+  .row-1{
+    padding: 40px 10px;
+    div:first-of-type{
+      display: none;
+    }
+    h2{
+      font-size: 1.7em;
+      text-align: center;
+      margin: 0;
+    }
+  }
+  
+  .row-2{
+    padding: 40px 0;
+    div:first-of-type{
+      margin-bottom: 0;
+    }
+    p{
+      font-size: 2em;
+    }
+  }
+  
+  .icons{
+    font-size: 3em;
+  }
+  
+  .row-4{
+    font-size: .75em;
+  }
+}
+
