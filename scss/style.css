@@ -205,7 +205,7 @@ nav {
 
   .row-5 p {
     font-size: 1.3em; } }
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .navbar-brand {
     font-size: .75em; }
 
